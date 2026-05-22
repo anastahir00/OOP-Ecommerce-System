@@ -8,118 +8,105 @@
 
 ---
 
-## 📋 Table of Contents
+# OOP E-Commerce System
 
-- [Overview](#-overview)
-- [OOP Concepts Demonstrated](#-oop-concepts-demonstrated)
-- [Features](#-features)
-- [Project Structure](#-project-structure)
-- [Installation & Usage](#-installation--usage)
-- [Sample Output](#-sample-output)
-- [Team](#-team)
-- [Related Projects](#-related-projects)
-- [Submission Details](#-submission-details)
+**Course:** Object Oriented Programming (OOP) | **Semester:** Spring 2025 | **Instructor:** Sir Muzahir Saleem | **University:** UMT, Lahore Campus
 
----
+## Table of Contents
 
-## 📖 Overview
+1. Team Members
+2. OOP Concepts Demonstrated
+3. Features
+4. How to Compile and Run
+5. Data Files Created
+6. Project Structure
+7. Sample Output
+8. Related Projects
+9. Submission Details
 
-This project was developed as the final submission for **Object Oriented Programming (OOP)** course at **University of Management & Technology, Lahore** (Spring 2025).
+## Team Members
 
-The system simulates a complete online shopping platform with:
+| Name | Roll Number |
+|------|-------------|
+| Muhammad Anas Tahir | F2024266985 |
+| Zohaib Ahmad | F2024266251 |
+| Muhammad Talha Bhatti | F2024266503 |
 
-| Role | Capabilities |
-|------|--------------|
-| **Admin** | Product management, sales tracking |
-| **Customer** | Registration, login, browsing, cart, checkout |
+## OOP Concepts Demonstrated
 
----
+| Concept | Implementation |
+|---------|----------------|
+| Encapsulation | Private members with public getters/setters in Product class |
+| Inheritance | Admin and Customer inherit from EcommerceSystem class |
+| Polymorphism | Virtual destructor in base class |
+| Operator Overloading | << operator for Product display using friend function |
+| Static Members | totalProducts counter across all Product instances |
+| Exception Handling | Try-catch for file operations in constructor |
+| File I/O | Persistent storage (products.txt, users.txt, sales.txt) |
+| Friend Function | operator<< as friend of Product class |
 
-## 🧠 OOP Concepts Demonstrated
+## Features
 
-| Concept | Implementation | Location |
-|---------|----------------|----------|
-| **Encapsulation** | Private members with public getters/setters | `Product` class |
-| **Inheritance** | `Admin` & `Customer` inherit from `EcommerceSystem` | Lines 150-250 |
-| **Polymorphism** | Virtual destructor in base class | `~EcommerceSystem()` |
-| **Operator Overloading** | `<<` operator for Product display | Friend function |
-| **Static Members** | `totalProducts` counter across all instances | `Product` class |
-| **Exception Handling** | Try-catch for file operations | Constructor |
-| **File I/O** | Persistent storage (products.txt, users.txt, sales.txt) | Multiple methods |
-| **Friend Function** | `operator<<` as friend of Product | `Product` class |
+**Admin Panel:** View sales records | Add new products | Remove products | View product catalog
 
----
+**Customer Panel:** Register new account | Login with credentials | Browse products by category (Electronics, Books, Furniture, Beauty, Grocery) | Add to cart with stock validation | View cart with running total | Checkout and complete purchase
 
-## 🚀 Features
+## How to Compile and Run
 
-### 👑 Admin Panel
-
-| Feature | Description |
-|---------|-------------|
-| View Sales Records | Display all completed transactions |
-| Add Product | Insert new products into catalog |
-| Remove Product | Delete existing products by ID |
-| View Catalog | Display all products |
-
-### 👤 Customer Panel
-
-| Feature | Description |
-|---------|-------------|
-| Register | Create new account (username/password) |
-| Login | Authenticate existing user |
-| Browse by Category | Electronics, Books, Furniture, Beauty, Grocery |
-| Add to Cart | With stock validation |
-| View Cart | Display items with running total |
-| Checkout | Complete purchase → logs sale |
-
----
-
-## 📁 Project Structure
-OOP-Ecommerce-System/
-│
-├── src/
-│ └── Project.cpp # Complete source code
-│
-├── docs/
-│ └── OOP_Project_Documentation.docx
-│
-├── README.md # This file
-└── .gitignore # Excludes .exe, .obj, etc.
-
----
-
-## 🛠️ Installation & Usage
-
-### Prerequisites
-
-- C++ compiler (g++ recommended)
-- Terminal / Command Prompt
-
-### Compilation
-
-**Windows (MinGW):**
-```bash
+**Windows:**
 g++ src/Project.cpp -o ecommerce.exe
 ./ecommerce.exe
-### Linux / Mac
+
+**Linux / Mac:**
 g++ src/Project.cpp -o ecommerce
 ./ecommerce
 
-## Admin Access
-
-Password: **admin123**
+**Admin Access Password:** admin123
 
 ## Data Files Created
 
 | File | Purpose |
 |------|---------|
-| products.txt | Product catalog (25 default products) |
-| users.txt | Registered user credentials |
-| sales.txt | Transaction records |
+| products.txt | Product catalog (25 default products across 5 categories) |
+| users.txt | Registered user credentials (username and password) |
+| sales.txt | Transaction records from customer checkouts |
+
+## Project Structure
+
+OOP-Ecommerce-System/
+├── src/
+│   └── Project.cpp
+├── docs/
+│   └── OOP_Project_Documentation.docx
+├── README.md
+└── .gitignore
+
+## Sample Output
+
+Welcome to the E-commerce System!
+Are you a:
+1. Admin
+2. Customer
+Choose 1 or 2: 2
+
+Customer Portal:
+1. Register
+2. Login
+3. Exit
+Choose an option: 1
+Enter username: anas
+Enter password: ****
+User registered successfully!
+
+--- Customer Menu ---
+1. Select Category and Add Products
+2. View Cart
+3. Checkout
+4. Logout
 
 ## Related Projects
 
-- [DSA E-Commerce System](https://github.com/anastahir00/Ecommerce-DSA) - Same domain using Data Structures
+- DSA E-Commerce System: https://github.com/anastahir00/Ecommerce-DSA
 
 ## Submission Date
 
