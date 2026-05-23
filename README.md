@@ -104,6 +104,29 @@ User registered successfully!
 3. Checkout
 4. Logout
 
+## 📸 Screenshots
+
+### Main Menu
+![Main Menu](screenshots/main_menu.png)
+
+### Admin Panel
+![Admin Login](screenshots/admin_login.png)
+![Admin Menu](screenshots/admin_menu.png)
+![Sales Records](screenshots/sales_record.png)
+
+### Customer Registration & Login
+![Registration](screenshots/customer_register.png)
+![Registration Success](screenshots/customer_register_successfully.png)
+![Duplicate User Error](screenshots/duplicate_user_error.png)
+![Login Success](screenshots/login_successfully.png)
+
+### Shopping Flow
+![Products by Category](screenshots/product_by_category.png)
+![Add to Cart](screenshots/add_to_cart.png)
+![View Cart](screenshots/view_cart.png)
+![Checkout](screenshots/checkout.png)
+![Empty Cart](screenshots/cart_empty.png)
+
 ## Related Projects
 
 - DSA E-Commerce System: https://github.com/anastahir00/Ecommerce-DSA
